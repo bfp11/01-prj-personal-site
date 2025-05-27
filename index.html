@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eathen Whittle Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <header>
+    <nav>
+      <h1>Eathen Whittle</h1>
+      <ul>
+        <li><a href="#bio">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Computer Science Student @ Texas State</h2>
+    <p>Motivated learner with hands-on experience in software development, databases, and machine learning.</p>
+  </section>
+
+  <section id="bio">
+    <h2>About Me</h2>
+    <p>I'm currently pursuing a BS in Computer Science with a minor in Applied Mathematics. I enjoy building full-stack applications and experimenting with AI and LLMs. I thrive in collaborative environments and love solving real-world problems through code.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><i class="fab fa-java"></i> Java</div>
+      <div><i class="fas fa-code"></i> C++</div>
+      <div><i class="fab fa-python"></i> Python</div>
+      <div><i class="fas fa-database"></i> MySQL / MongoDB</div>
+      <div><i class="fas fa-terminal"></i> Git & VSCode</div>
+      <div><i class="fas fa-brain"></i> Machine Learning (BERT)</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Full-Stack Budgeting App</h3>
+      <p>MySQL-backed app for managing income, budgets, and expenses in real-time.</p>
+    </div>
+    <div class="project">
+      <h3>Fake News Detection (BERT)</h3>
+      <p>Trained a BERT model to classify fake news using cleaned and validated datasets.</p>
+    </div>
+    <div class="project">
+      <h3>Multiplayer Tic-Tac-Toe</h3>
+      <p>Java Swing GUI with MongoDB integration for tracking scores and history.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:eathenwhittle@gmail.com">eathenwhittle@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/eathen-w-673a731b4/" target="_blank">LinkedIn</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/bfp11" target="_blank">GitHub</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Eathen Whittle</p>
+  </footer>
 </body>
 </html>
