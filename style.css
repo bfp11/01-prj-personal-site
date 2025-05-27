@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #ffffff;
   color: #1e1e1e;
 }
@@ -39,9 +39,29 @@ nav a:hover {
 }
 
 .hero {
+  position: relative;
   text-align: center;
   padding: 4rem 2rem;
-  background: #e3f2fd;
+  background: url('comp_sci_background.jpg') center/cover no-repeat;
+  color: #ffffff;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
 }
 
 .profile-pic {
@@ -53,7 +73,7 @@ nav a:hover {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #0d47a1;
+  border: 3px solid #ffffff;
 }
 
 section {
@@ -68,7 +88,7 @@ h2 {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -104,8 +124,17 @@ a {
 
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background: #0d47a1;
   color: white;
-  margin-top: 2rem;
+}
+
+footer a {
+  color: #bbdefb;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
